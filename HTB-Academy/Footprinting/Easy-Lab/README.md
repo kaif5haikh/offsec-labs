@@ -79,7 +79,7 @@ We are not able to get access here also using private key because ssh dont allow
 ![Changing Key Permissions](screenshots/09-changing-key-permissions.png)
 
 We have to set only permission to user and remove all the permission from other and group users.
-![Successful SSH Access](screenshots/10-successful-ssh-access.png)
+![Successful SSH Access](screenshots/10-get-ssh-access.png)
 
 Now here we get access of that server using ssh .
 Now we can find flag.txt file 
@@ -87,7 +87,7 @@ Now we can find flag.txt file
 
 
 After going into that directory we able to find that flag.
-![Flag Discovery](screenshots/12-flag-discovery.png)
+![Flag Discovery](screenshots/12-get-flag.png)
 
 
 This lab is very useful that teaches my how to enumerate services and find a way to exploit them.
