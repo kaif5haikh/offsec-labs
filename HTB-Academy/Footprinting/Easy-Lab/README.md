@@ -48,7 +48,7 @@ Also i am trying to check hidden files
 But also there isn't any file are there here.
 
 Then i will try to access ssh service using those creds. Because that credential also is for ssh, Now lets check 
-![SSH Password Login](screenshots/03-ssh-password-login.png)
+![SSH Password Login](screenshots/03-ssh-login.png)
 
 Nope, Its not connecting using passwords.
 
