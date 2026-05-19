@@ -48,37 +48,46 @@ Also i am trying to check hidden files
 But also there isn't any file are there here.
 
 Then i will try to access ssh service using those creds. Because that credential also is for ssh, Now lets check 
-![[Pasted image 20260517145019.png]]
+![SSH Password Login](screenshots/03-ssh-password-login.png)
+
 Nope, Its not connecting using passwords.
 
 Now lets check using option called `-o PreferredAuthentications=password`
-![[Pasted image 20260517145617.png]]
+![SSH Password Authentication Attempt](screenshots/04-ssh-only-password-login.png)
+
 Nope, Here also its not accepting with password.
 
 Now earlier while doing nmap scan we found 3 ports, the third port are also ftp port which are running on non-standard port that is 2121. Now lets check to connect with this port
-![[Pasted image 20260517145817.png]]
+![FTP Login on Port 2121](screenshots/05-ftp-login-2121-port.png)
+
 Hurray!!!, We logged in using ftp port 2121 with those creds.
 
 Now lets check is there any file or directories are there or not.
-![[Pasted image 20260517145936.png]]
+![Enumerating Directory](screenshots/06-enumerating-directory.png)
+
 Yes there are some hidden directories or files present.
 
 Now we are seeing here .ssh directory which is accessible by us, that is user ceil after going inside that directory i able to get private key of ssh 
-![[Pasted image 20260517150238.png]]
+![Getting SSH Key](screenshots/07-getting-ssh-key.png)
+
 Now we may able to get access of server using ssh.
-![[Pasted image 20260517150331.png]]
+![Login With SSH Key](screenshots/08-login-with-ssh-key.png)
+
 We are not able to get access here also using private key because ssh dont allow access without proper permission in that private key file, we have to change permission of `id_rsa` file 
 
 
-![[Pasted image 20260517150608.png]]
+![Changing Key Permissions](screenshots/09-changing-key-permissions.png)
+
 We have to set only permission to user and remove all the permission from other and group users.
-![[Pasted image 20260517150706.png]]
+![Successful SSH Access](screenshots/10-successful-ssh-access.png)
+
 Now here we get access of that server using ssh .
 Now we can find flag.txt file 
-![[Pasted image 20260517150921.png]]
+![Finding Flag File](screenshots/11-finding-flag-file.png)
+
 
 After going into that directory we able to find that flag.
-![[Pasted image 20260517150956.png]]
+![Flag Discovery](screenshots/12-flag-discovery.png)
 
 
 This lab is very useful that teaches my how to enumerate services and find a way to exploit them.
