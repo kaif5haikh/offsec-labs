@@ -44,7 +44,7 @@ Then now i am trying to access ftp port of 21 using found creds,
 Here We are able to access ftp server, But one problem is there is not file or directory are there here.
 
 Also i am trying to check hidden files
-![[Pasted image 20260517144847.png]]
+![ftp](screenshots/02-ftp-enumeration.png)
 But also there isn't any file are there here.
 
 Then i will try to access ssh service using those creds. Because that credential also is for ssh, Now lets check 
