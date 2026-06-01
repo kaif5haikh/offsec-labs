@@ -152,11 +152,11 @@ here we found out an `vhost` named `web1337.inlanefreight.htb`
 Lets add this `vhost` in `/etc/hosts` file to get access of this file
 
 After adding this in `/etc/hosts` file lets check out this service on http port
-![[Skills Assessment-20260529200359646.png]]
+![visiting web1337 vhost](screenshots/f2.png)
 Yes we can now access this domain. 
 
 Now lets check robots.txt to get more information.
-	![[Skills Assessment-20260529200505157.png]]
+	![check robots.txt of web1337](screenshots/f3.png)
 Here we can see an interesting directory revealed `/admin_hidd3n`
 
 Lets see is this directory giving response or not:
@@ -210,7 +210,7 @@ Finished
 Here we also get an `index.html` sub-directory of `/admin_h1dd3n`
 
 Lets see `index.html` 
-![[Skills Assessment-20260529202825772.png]]
+![getting api key](screenshots/f4.png)
 Here we can see the API key.
 
 ## **Q4&Q5:After crawling the `inlanefreight.htb` domain on the target system, what is the email address you have found? Respond with the full email, e.g., mail@inlanefreight.htb.**
@@ -337,8 +337,8 @@ Now we get a `vhost` which is now we can access.
 
 Now try to analyze this domain. But I have to add that domain into `/etc/hosts` file to get access because it is a `vhost` using a same IP and running on the same server.
 
-![[Skills Assessment-20260530215157601.png]]
-ok lets analyze this using domain using `ReconSpider.py` tool.
+![dev subdomain](screenshots/f5.png)
+ok lets analyze this domain with `ReconSpider.py` command utility.
 
 **Command:**
 ```Bash
