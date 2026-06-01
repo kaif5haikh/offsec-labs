@@ -60,7 +60,7 @@ Accept-Ranges: bytes
 ## Q3:What is the API key in the hidden admin directory that you have discovered on the target system?
 
 - lets check first `robots.txt` file on `inlanefreight.htb` site:
-	 ![[Skills Assessment-20260529182408284.png]]
+	 ![robots.txt check](screenshots/Skills Assessment-20260529182408284.png)
 
 	- Here we didn't find robots.txt file
 - Lets crawl this `inlanefreight.htb` website using `ReconSpider`:
